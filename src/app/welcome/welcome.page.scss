@@ -1,0 +1,33 @@
+.welcome-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f0f0f0;
+    margin: 0; 
+  }
+  
+  .welcome-title {
+    margin: 20px 0; 
+    text-align: center;
+    color: #c4c0c0;
+    font-size: 24px; 
+  }
+  
+  .category-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 350px; 
+  }
+  
+  .custom-button {
+    --background: #195391; 
+    --color: white;
+    --border-radius: 5px; 
+    padding: 15px;
+    font-size: 18px; 
+  }
+  
