@@ -1,0 +1,7 @@
+{
+  "name": "TheCinemaApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
