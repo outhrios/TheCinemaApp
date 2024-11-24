@@ -9,6 +9,14 @@ const routes: Routes = [
   { path: 'comedia', loadChildren: () => import('./comedia/comedia.module').then(m => m.ComediaPageModule) },
   { path: 'terror', loadChildren: () => import('./terror/terror.module').then(m => m.TerrorPageModule) },
   { path: 'accion', loadChildren: () => import('./accion/accion.module').then(m => m.AccionPageModule) },
+  {
+    path: 'agregar',
+    loadChildren: () => import('./pages/agregar/agregar.module').then( m => m.AgregarPageModule)
+  },
+  {
+    path: 'modificar',
+    loadChildren: () => import('./pages/modificar/modificar.module').then( m => m.ModificarPageModule)
+  },
 ];
 
 @NgModule({
