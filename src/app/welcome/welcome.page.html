@@ -41,14 +41,13 @@
       </ion-menu-toggle>
     </ion-buttons>
     <ion-buttons slot="end">
-      <ion-button>
-        <ion-icon name="search-outline"></ion-icon>
-      </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content id="main-content" class="welcome-content">
+  <img src="assets/images/logo.png" alt="The Cinema" class="welcome-image" />
+
   <div class="welcome-text">
     <ion-text class="welcome-title">
       <h1>Bienvenido a THE CINEMA</h1>
@@ -58,5 +57,28 @@
     </ion-text>
   </div>
 
-  <img src="assets/images/logo.png" alt="The Cinema" class="welcome-image" />
+  <ion-item>
+    <ion-input 
+      [(ngModel)]="busqueda" 
+      placeholder="Buscar película..." 
+      type="text" 
+      (keydown.enter)="buscarPeliculas()">
+    </ion-input>
+    <ion-button slot="end" (click)="buscarPeliculas()">
+      <ion-icon name="search-outline"></ion-icon>
+    </ion-button>
+  </ion-item>
+
+  <ion-text *ngIf="error404" color="danger">
+    <h2>Error 404: Película no encontrada</h2>
+  </ion-text>
+
+  <ion-list *ngIf="peliculas.length > 0 && !error404">
+    <ion-item *ngFor="let pelicula of peliculas">
+      <ion-label>
+        <h2>{{ pelicula.titulo }}</h2>
+        <p>{{ pelicula.descripcion }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

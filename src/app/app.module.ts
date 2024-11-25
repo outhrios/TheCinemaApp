@@ -4,6 +4,8 @@ import { IonicModule } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MatButtonModule } from '@angular/material/button';
+import { PeliculasService } from './services/peliculas.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
@@ -11,9 +13,10 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule 
   ],
-  providers: [],
+  providers: [PeliculasService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

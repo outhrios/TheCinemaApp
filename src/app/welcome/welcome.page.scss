@@ -1,13 +1,10 @@
 ion-header ion-toolbar ion-title {
-  font-size: 25px; /* Cambiar el tamaño de la fuente */
-  font-weight: bold; /* Hacer el título en negrita */
-  color: #ffffff; /* Color blanco */
-  text-transform: uppercase; /* Transformar el texto a mayúsculas */
-  letter-spacing: 2px; /* Espaciado entre letras */
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
 }
-
-
-
 
 .welcome-content {
   display: flex;
@@ -61,8 +58,8 @@ ion-toolbar {
 }
 
 .about-item ion-label {
-  font-size: 10px; 
-  color: #000000;      
+  font-size: 15px; 
+  color: #373636;      
 }
 
 .category-buttons {
@@ -80,3 +77,4 @@ ion-toolbar {
   padding: 15px;
   font-size: 18px; 
 }
+
