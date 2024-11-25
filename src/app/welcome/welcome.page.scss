@@ -1,3 +1,14 @@
+ion-header ion-toolbar ion-title {
+  font-size: 25px; /* Cambiar el tamaño de la fuente */
+  font-weight: bold; /* Hacer el título en negrita */
+  color: #ffffff; /* Color blanco */
+  text-transform: uppercase; /* Transformar el texto a mayúsculas */
+  letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+
+
+
 .welcome-content {
   display: flex;
   flex-direction: column;
@@ -8,27 +19,20 @@
   margin: 0; 
 }
 
-.welcome-title {
-  margin: 20px 0; 
+.welcome-text {
   text-align: center;
-  color: #c4c0c0;
-  font-size: 24px; 
+  margin-bottom: 20px; 
 }
 
-.category-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 100%;
-  max-width: 350px; 
+.welcome-title {
+  font-size: 30px; 
+  color: #195391; 
+  font-weight: bold;
 }
 
-.custom-button {
-  --background: #195391; 
-  --color: white;
-  --border-radius: 5px; 
-  padding: 15px;
+.welcome-subtitle {
   font-size: 18px; 
+  color: #777; 
 }
 
 ion-menu {
@@ -40,7 +44,8 @@ ion-menu ion-item {
 }
 
 ion-menu ion-label {
-  color: white; 
+  font-size: 25px; 
+  color: rgb(0, 0, 0); 
 }
 
 ion-header ion-icon {
@@ -48,14 +53,30 @@ ion-header ion-icon {
 }
 
 ion-header {
-  --background: #195391; 
+  --background: #011639; 
 }
 
 ion-toolbar {
-  --background: #195391;
+  --background: #011639;
 }
 
 .about-item ion-label {
   font-size: 10px; 
-  color: #aaa;      
+  color: #000000;      
+}
+
+.category-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 350px; 
+}
+
+.custom-button {
+  --background: #011639; 
+  --color: rgb(0, 0, 0);
+  --border-radius: 5px; 
+  padding: 15px;
+  font-size: 18px; 
 }
