@@ -12,6 +12,7 @@
     <h2 class="about-title">The Cinema</h2>
     <p class="about-description">Aplicación creada para los amantes del cine.</p>
     <p class="about-author">Desarrollada con amor por Diego Ríos. ♡</p>
+    <img *ngIf="photo" [src]="photo" alt="Foto capturada" />
+    <ion-button expand="full" (click)="takePhoto()">Tomar Foto</ion-button>
   </div>
 </ion-content>
-
